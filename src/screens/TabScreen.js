@@ -16,7 +16,7 @@ this.submit = this.submit.bind(this);
 submit(title,post) {
 
 if (title && post) {
-    fetch('https://murmuring-bastion-31969.herokuapp.com/post',{
+    fetch('https://protected-spire-82809.herokuapp.com/post',{
     method: 'POST',
     headers: {
         'Content-Type':'application/x-www-form-urlencoded'},
