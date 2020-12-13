@@ -20,7 +20,7 @@ this.props.navigation.navigate('Details',item);
 }
 
 componentDidMount(){
-fetch ('https://murmuring-bastion-31969.herokuapp.com/entries').then(response => response.json()).then(jsonResponse => this.setState( { entries: jsonResponse}));
+fetch ('https://protected-spire-82809.herokuapp.com/entries').then(response => response.json()).then(jsonResponse => this.setState( { entries: jsonResponse}));
 }
 
 componentWillReceiveProps() {
@@ -28,7 +28,7 @@ componentWillReceiveProps() {
 }
 
 handleDelete() {
-fetch('https://murmuring-bastion-31969.herokuapp.com/delete', {
+fetch('https://protected-spire-82809.herokuapp.com/delete', {
 method: 'DELETE'
 }).then(response => {
     this.props.navigation.navigate('Feed');
